@@ -1,2 +1,2 @@
-# MyAppMaps - Aplicações para Dispositivos Móveis
+# DISCIPLINA: MATC89 - Aplicações para Dispositivos Móveis
 Obtenção dos dados de sensores 
