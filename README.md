@@ -1,2 +1,2 @@
-# Obtenção dos dados de sensores 
+# Navegação das telas e obtenção dos dados de sensores 
 DISCIPLINA: MATC89 - Aplicações para Dispositivos Móveis
