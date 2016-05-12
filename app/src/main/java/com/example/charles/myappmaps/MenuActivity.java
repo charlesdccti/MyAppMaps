@@ -36,5 +36,14 @@ public class MenuActivity extends Activity {
                 startActivity(intent);
             }
         });
+
+
+        Button btSair = (Button) findViewById(R.id.btSair);
+        btSair.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                onStop();
+            }
+        });
     }
 }
