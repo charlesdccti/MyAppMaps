@@ -83,6 +83,17 @@ public class LoginActivity extends AppCompatActivity implements LoaderCallbacks<
             }
         });
 
+        Button btCadastrarUsuario = (Button) findViewById(R.id.btCadastrarUsuario);
+        btCadastrarUsuario.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                //Navega  para proxima tela
+                Intent intent = new Intent(getApplicationContext(), CadastrarUsuarioActivity.class);
+                startActivity(intent);
+            }
+        });
+
         Button mEmailSignInButton = (Button) findViewById(R.id.email_sign_in_button);
         mEmailSignInButton.setOnClickListener(new OnClickListener() {
             @Override
