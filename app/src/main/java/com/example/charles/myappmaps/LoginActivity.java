@@ -29,6 +29,10 @@ import android.widget.AutoCompleteTextView;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
+import android.widget.Toast;
+
+import com.example.charles.myappmaps.model.Usuario;
+import com.example.charles.myappmaps.services.DB;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -168,12 +172,25 @@ public class LoginActivity extends AppCompatActivity implements LoaderCallbacks<
         String email = mEmailView.getText().toString();
         String password = mPasswordView.getText().toString();
 
+
+      /*  Usuario usuario= DB.getInstance(this).getUsuario(email.toString(), password.toString());
+
+        if(usuario!=null){
+            //Navega  para proxima tela
+            Intent intent = new Intent(getApplicationContext(), MenuActivity.class );
+            startActivity(intent);
+        }else{
+
+            Toast.makeText(this, "Erro acesso ao usuario",
+                    Toast.LENGTH_LONG).show();
+        }
+*/
+
         if("charles".equals(email) && "ufba".equals(password)){
             //Navega  para proxima tela
             Intent intent = new Intent(getApplicationContext(), MenuActivity.class );
             startActivity(intent);
         }
-
         boolean cancel = false;
         View focusView = null;
 

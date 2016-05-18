@@ -32,6 +32,7 @@ public class MenuActivity extends Activity {
             public void onClick(View v) {
 
                 //Navega  para proxima tela
+
                 Intent intent = new Intent(getApplicationContext(), ListarAcademiasActivity.class );
                 startActivity(intent);
             }
